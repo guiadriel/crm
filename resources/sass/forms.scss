@@ -1,0 +1,68 @@
+.btn:not(.btn-sm) {
+  height: 40px;
+  padding: 0 15px;
+}
+
+a.btn:not(.btn-sm) {
+  line-height: 40px;
+}
+
+.btn-danger {
+  background: $primary ;
+}
+
+input, textarea {
+
+  outline: 0;
+  box-shadow: none;
+  background: #FFf;
+  width: 100%;
+  padding-left: 15px;
+  position: relative;
+  border-radius: 5px;
+  border: 2px solid #FFF;
+
+  &:focus{
+    outline: 0;
+    box-shadow: none;
+    border: 2px solid $primary;
+  }
+
+  &::placeholder{
+    color: #C9C9C9;
+  }
+
+  &::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+
+  }
+}
+
+input, select {
+  height: 40px;
+}
+
+select {
+  outline: 0;
+  box-shadow: none;
+  background: #FFf;
+  padding-left: 25px;
+  position: relative;
+  border-radius: 5px;
+  border: 2px solid #FFF;
+
+  &:focus{
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+input, select, textarea {
+  &:focus{
+    border: 2px solid $primary;
+  }
+}

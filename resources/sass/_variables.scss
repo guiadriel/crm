@@ -1,0 +1,41 @@
+// Body
+$body-bg: #F1F1F3;
+
+// Typography
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #A95A5A;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$dark2: #243340;
+
+// $primary: #245FAD;
+$primary: #a37e80;
+$light: #F1F1F3;
+$grey: #C9C9C9;
+// A71119
+
+$theme-colors: (
+  "white": #FFF,
+);
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}

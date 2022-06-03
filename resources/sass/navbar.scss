@@ -1,0 +1,17 @@
+.navbar {
+  background: $primary;
+  color: $light;
+  height: 75px;
+  width: calc(100% - 250px);
+  flex: 1;
+  position: fixed;
+  top:0;
+  z-index:999;
+  margin-left: 250px;
+  font-family: 'Roboto', sans-serif;
+
+  .nav-link, a.navbar-brand {
+    color: $light;
+
+  }
+}

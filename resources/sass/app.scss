@@ -1,0 +1,54 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~toastr/toastr';
+@import '~jquery-ui/themes/base/all.css';
+@import '~tippy.js/dist/tippy.css';
+@import '~jquery-datetimepicker/build/jquery.datetimepicker.min.css';
+
+
+@import './forms.scss';
+@import './cashflow.scss';
+
+
+
+
+#app {
+  display: flex;
+  justify-items: stretch;
+
+  main {
+    flex: 1;
+    width: 100%;
+
+    section.content {
+      margin-left: 250px;
+      margin-top: 75px;
+      padding-top: 15px;
+    }
+  }
+}
+
+.modal-content {
+    background: $body-bg;
+}
+
+
+.clickable:hover {
+    cursor:pointer;
+    background: $primary !important;
+    color: #FFF;
+}
+
+.text-blue {
+    color: shade($blue, 25);
+}
+
+@import './navbar.scss';
+@import './sidebar.scss';
