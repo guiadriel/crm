@@ -1,3 +1,3 @@
 ## Readme - CRM
 
-CRM - Laravel 7
+CRM developed with Laravel 7
